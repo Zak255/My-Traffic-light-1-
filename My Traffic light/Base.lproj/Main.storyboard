@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Traffic_light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.34999999999999998" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-9O-Q2G">
+                                <rect key="frame" x="119" y="792.33333333333337" width="191" height="67.666666666666629"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="systemIndigoColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5l-8B-Hhx">
+                                <rect key="frame" x="136" y="88.999999999999986" width="156" height="154.66666666666663"/>
+                                <color key="backgroundColor" red="0.79886231780000005" green="0.0" blue="0.048834294450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="72"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TnO-TT-qbh">
+                                <rect key="frame" x="136" y="318.66666666666669" width="156" height="154.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="72"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="si3-U8-hKC">
+                                <rect key="frame" x="136" y="549.33333333333337" width="156" height="155"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="72"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hYl-CW-kf9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="TnO-TT-qbh" firstAttribute="leading" secondItem="hYl-CW-kf9" secondAttribute="leading" constant="136" id="20k-ac-pec"/>
+                            <constraint firstItem="TnO-TT-qbh" firstAttribute="height" secondItem="si3-U8-hKC" secondAttribute="height" id="4tT-W2-QzF"/>
+                            <constraint firstItem="si3-U8-hKC" firstAttribute="top" secondItem="TnO-TT-qbh" secondAttribute="bottom" constant="76" id="6Hv-YN-vbm"/>
+                            <constraint firstItem="si3-U8-hKC" firstAttribute="height" secondItem="zNp-9O-Q2G" secondAttribute="height" multiplier="2.28125" id="L0I-Re-N8X"/>
+                            <constraint firstItem="q5l-8B-Hhx" firstAttribute="leading" secondItem="hYl-CW-kf9" secondAttribute="leading" constant="136" id="RTI-4N-hF5"/>
+                            <constraint firstItem="hYl-CW-kf9" firstAttribute="trailing" secondItem="TnO-TT-qbh" secondAttribute="trailing" constant="136" id="TpD-Fo-MHs"/>
+                            <constraint firstItem="q5l-8B-Hhx" firstAttribute="height" secondItem="TnO-TT-qbh" secondAttribute="height" id="Ve6-o9-aMH"/>
+                            <constraint firstItem="hYl-CW-kf9" firstAttribute="trailing" secondItem="q5l-8B-Hhx" secondAttribute="trailing" constant="136" id="X6e-eu-8JO"/>
+                            <constraint firstItem="TnO-TT-qbh" firstAttribute="top" secondItem="q5l-8B-Hhx" secondAttribute="bottom" constant="75" id="a4v-ZW-q4u"/>
+                            <constraint firstItem="hYl-CW-kf9" firstAttribute="trailing" secondItem="si3-U8-hKC" secondAttribute="trailing" constant="136" id="bRz-jQ-LFr"/>
+                            <constraint firstItem="hYl-CW-kf9" firstAttribute="trailing" secondItem="zNp-9O-Q2G" secondAttribute="trailing" constant="118" id="cSO-FT-uBj"/>
+                            <constraint firstItem="zNp-9O-Q2G" firstAttribute="top" secondItem="si3-U8-hKC" secondAttribute="bottom" constant="88" id="iXH-aU-e8O"/>
+                            <constraint firstItem="q5l-8B-Hhx" firstAttribute="top" secondItem="hYl-CW-kf9" secondAttribute="top" constant="45" id="n7f-QZ-GpO"/>
+                            <constraint firstItem="si3-U8-hKC" firstAttribute="leading" secondItem="hYl-CW-kf9" secondAttribute="leading" constant="136" id="syq-iG-4gz"/>
+                            <constraint firstItem="hYl-CW-kf9" firstAttribute="bottom" secondItem="zNp-9O-Q2G" secondAttribute="bottom" constant="32" id="yHa-RL-ypL"/>
+                            <constraint firstItem="zNp-9O-Q2G" firstAttribute="leading" secondItem="hYl-CW-kf9" secondAttribute="leading" constant="119" id="yj7-M6-oTs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="greenButton" destination="si3-U8-hKC" id="dBX-un-QZT"/>
+                        <outlet property="redButton" destination="q5l-8B-Hhx" id="wcg-8m-Cpx"/>
+                        <outlet property="yellowButton" destination="TnO-TT-qbh" id="nSQ-Dc-0Yy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
