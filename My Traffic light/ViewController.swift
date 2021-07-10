@@ -3,8 +3,6 @@ import UIKit
 enum CurrentLight {
     case red, yellow, green
 }
-
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var redLight: UIView!
